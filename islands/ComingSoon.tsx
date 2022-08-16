@@ -13,7 +13,7 @@ const ComingSoon = () => {
         css({
           perspective: '1000px',
           perspectiveOrigin: '50% calc(50% - 400px)',
-          transform: 'scale(2) rotate(20deg)',
+          transform: 'rotate(20deg)',
         })
       }`}
     >
@@ -23,7 +23,7 @@ const ComingSoon = () => {
         {Array(64).fill(0).map((_, i) => (
           <div
             key={i}
-            class={tw`absolute  w-[${panelWidth}px]  h-[${panelHeight}px]  overflow-hidden  ${
+            class={tw`absolute w-[${panelWidth}px] h-[${panelHeight}px] overflow-hidden ${
               css({
                 transform: `translate(-50%, -50%) rotateY(${360 * i / 64}deg) translateZ(110px)`,
               })
